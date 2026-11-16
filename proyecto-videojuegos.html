@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Proyecto de análisis y visualización de ventas de videojuegos con R y desarrollo de un dashboard interactivo.">
+
+    <title>Análisis de videojuegos | Portfolio</title>
+
+    <link rel="stylesheet" href="proyectos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Alicia Casaux Vázquez</a>
+
+            <a href="index.html" class="back-home">
+                ← Volver al inicio
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PRESENTACIÓN DEL PROYECTO -->
+        <section class="project-hero">
+
+            <p class="intro">PROYECTO ACADÉMICO · GRADO EN ESTADÍSTICA · UNIVERSIDAD DE SEVILLA</p>
+
+            <h1>Análisis de ventas de videojuegos</h1>
+
+            <p>
+                Análisis exploratorio y visualización de datos
+                sobre las ventas de videojuegos mediante R,
+                junto con el desarrollo de un dashboard
+                interactivo para explorar la información.
+            </p>
+
+            <div class="technologies">
+                <span>R</span>
+                <span>R Markdown</span>
+                <span>Flexdashboard</span>
+                <span>Shiny</span>
+                <span>Visualización de datos</span>
+            </div>
+
+        </section>
+
+
+        <!-- DETALLE DEL PROYECTO -->
+        <section class="project-detail">
+
+            <!-- DESCRIPCIÓN -->
+            <h2>Descripción del proyecto</h2>
+
+            <p>
+                Este proyecto consiste en analizar las ventas de
+                videojuegos a partir de diferentes conjuntos de
+                datos que contienen información sobre títulos,
+                plataformas, géneros y regiones geográficas.
+            </p>
+
+            <p>
+                El trabajo incluye la importación y preparación
+                inicial de los datos, un análisis exploratorio
+                para estudiar el comportamiento de las ventas
+                y la elaboración de visualizaciones que permiten
+                comparar los resultados desde distintas perspectivas.
+            </p>
+
+            <p>
+                Como resultado, se desarrolla un dashboard
+                interactivo que reúne gráficos, tablas y filtros
+                para facilitar la consulta y exploración de
+                la información.
+            </p>
+
+
+            <!-- OBJETIVOS -->
+            <h2>Objetivos</h2>
+
+            <div class="detail-card">
+
+                <p>
+                    <strong>Preparación de datos:</strong>
+                    importar diferentes conjuntos de datos,
+                    especificar los tipos de variables y
+                    preparar la información para su análisis.
+                </p>
+
+                <p>
+                    <strong>Análisis exploratorio:</strong>
+                    estudiar las ventas según plataformas,
+                    géneros, años y regiones geográficas.
+                </p>
+
+                <p>
+                    <strong>Visualización:</strong>
+                    representar la información mediante
+                    gráficos y tablas que faciliten su
+                    interpretación.
+                </p>
+
+                <p>
+                    <strong>Dashboard interactivo:</strong>
+                    integrar diferentes visualizaciones
+                    en un panel que permita explorar los
+                    datos mediante filtros.
+                </p>
+
+            </div>
+
+
+            <!-- DESARROLLO -->
+            <h2>Desarrollo del proyecto</h2>
+
+
+            <!-- 1. PREPARACIÓN DE DATOS -->
+            <div class="detail-card">
+
+                <h3>1. Preparación e importación de datos</h3>
+
+                <p>
+                    Importación de diferentes conjuntos de datos
+                    mediante la función <strong>read_csv()</strong>
+                    de la biblioteca readr, especificando los
+                    tipos de variables e identificando los
+                    valores ausentes.
+                </p>
+
+                <p>
+                    Se trabajó con un conjunto general de ventas
+                    de videojuegos y otros dos conjuntos
+                    específicos de PlayStation 4 y Xbox One.
+                    También se prepararon los datos para facilitar
+                    su posterior análisis y comparación.
+                </p>
+        
+
+            </div>
+
+            <div class="project-image">
+
+                <figure class="project-figure">
+                    <img src="img/Videojuegos/video1.png"
+                         alt="Importación y preparación de los datos de videojuegos">
+                         <figcaption>
+                            Vista previa de los registros y variables del conjunto de datos de ventas generales.
+                        </figcaption>
+                </figure>
+
+            </div>
+
+
+            <!-- 2. ANÁLISIS EXPLORATORIO -->
+            <div class="detail-card">
+
+                <h3>2. Análisis exploratorio de datos</h3>
+
+                <p>
+                    Se analizaron las ventas globales de videojuegos
+                    agrupándolas por plataforma, con el objetivo
+                    de identificar cuáles concentraban un mayor
+                    volumen de ventas a nivel mundial.
+                </p>
+
+                <div class="project-image">
+
+                    <figure class="project-figure">
+                        <img src="img/Videojuegos/video2.png"
+                             alt="Gráfico de ventas globales por plataforma">
+                        <figcaption>
+                            Comparación de las ventas globales acumuladas por plataforma.
+                        </figcaption>
+
+                    </figure>
+                    <p>
+                        El análisis revela un claro liderazgo de PS2 en términos de ventas globales, seguida por Xbox 360, PS3 y Wii. Esta representación facilita la comparación entre plataformas y permite identificar cuáles han concentrado una mayor cuota de mercado dentro del conjunto de datos analizado.
+                    </p>
+
+    
+                </div>
+
+
+                <p>
+                    También se estudió la distribución de los
+                    videojuegos según su género, contabilizando
+                    el número de títulos pertenecientes a cada
+                    categoría.
+                </p>
+
+                <div class="project-image">
+
+                    <figure class="project-figure">
+                        <img src="img/Videojuegos/video3.png"
+                             alt="Gráfico del número de videojuegos por género">
+                        <figcaption>
+                            Distribución del número de videojuegos según su género.
+                        </figcaption>
+                    </figure>
+                    <p>
+                        La visualización muestra una clara predominancia de los juegos de acción y deportes, mientras que géneros como Puzzle y Strategy presentan una menor representación. Esto permite comprender cómo se distribuyen los videojuegos entre las distintas categorías del mercado.
+                    </p>
+    
+                </div>
+
+                <p>
+                    Por último, se analizaron las ventas regionales,
+                    diferenciando entre Norteamérica, Europa,
+                    Japón y el resto del mundo, tanto por género
+                    como por plataforma.
+                </p>
+
+                <div class="project-image">
+
+                    
+                    <figure class="project-figure">
+                        <img src="img/Videojuegos/video4.png"
+                             alt="Gráfico de ventas de videojuegos por región">
+                        <figcaption>
+                            Análisis y visualización de las ventas regionales.
+                        </figcaption>
+                    </figure>
+                    <p>
+                        El análisis regional revela que Norteamérica y Europa concentran la mayor parte de las ventas en la mayoría de géneros, mientras que Japón presenta patrones de consumo diferenciados en categorías como Role-Playing. Esta comparación permite comprender mejor las preferencias de cada mercado.
+                    </p>
+    
+                </div>
+
+            </div>
+
+
+
+            <!-- 3. COMPARACIÓN DE PLATAFORMAS -->
+            <div class="detail-card">
+
+                <h3>3. Comparación entre PlayStation 4 y Xbox One</h3>
+
+                <p>
+                    Se realizó un análisis específico de las
+                    ventas de ambas consolas para comparar
+                    sus videojuegos más vendidos, la distribución
+                    regional de las ventas y los géneros con
+                    mayor volumen de ventas en cada plataforma.
+                </p>
+
+                <div class="project-image">
+
+                    
+                    
+                    <figure class="project-figure">
+                        <img src="img/Videojuegos/video5.png"
+                             alt="Comparación de los diez videojuegos más vendidos en PS4 y Xbox One">
+                        <figcaption>
+                            Comparación de los diez videojuegos más vendidos en ambas consolas.
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        El análisis muestra que algunos títulos multiplataforma, como Grand Theft Auto V y Call of Duty, lideran las ventas en ambas consolas. Asimismo, se observan diferencias derivadas de los juegos exclusivos de cada plataforma, lo que permite comprender mejor las preferencias de los usuarios de PS4 y Xbox One.
+                    </p>
+    
+                </div>
+
+
+                <p>
+                    Además, se estudiaron los géneros con mayores
+                    ventas en cada consola para identificar
+                    similitudes y diferencias entre ambas
+                    plataformas.
+                </p>
+
+                <div class="project-image">
+
+                    
+                    <figure class="project-figure">
+                        <img src="img/Videojuegos/video6.png"
+                             alt="Comparación de las ventas por género en PS4 y Xbox One">
+                        <figcaption>
+                            Comparación de los géneros con mayores ventas en PS4 y Xbox One.
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        El análisis muestra que los géneros Action, Shooter y Sports concentran gran parte de las ventas en ambas consolas. Sin embargo, se observan diferencias en su distribución relativa, lo que refleja preferencias de consumo distintas entre los usuarios de PS4 y Xbox One.
+                    </p>
+    
+    
+                </div>
+
+
+                <p>
+                    También se incorporó una visualización
+                    interactiva de tipo treemap para identificar
+                    las editoriales con mayor volumen de ventas
+                    dentro de la plataforma seleccionada.
+                </p>
+
+                <div class="project-image">
+
+                    
+                    <figure class="project-figure">
+                        <img src="img/Videojuegos/video7.png"
+                             alt="Treemap de las ventas por editorial">
+                    </figure>
+
+                    <figure class="project-figure">
+                        <img src="img/Videojuegos/video8.png"
+                             alt="Treemap de las ventas por editorial">
+                        <figcaption>
+                            Distribución de las ventas por editorial mediante un treemap .
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        La representación jerárquica muestra cómo se distribuyen las ventas entre las principales editoriales de cada consola. A través del tamaño de los bloques, es posible identificar las compañías con mayor impacto comercial y comparar su influencia relativa en PS4 y Xbox One.
+                    </p>
+                    
+    
+    
+                </div>
+
+
+
+            </div>
+
+
+            <!-- 4. DASHBOARD INTERACTIVO -->
+            <div class="detail-card">
+
+                <h3>4. Desarrollo del dashboard interactivo</h3>
+
+                <p>             
+                    Se desarrolló un dashboard mediante R Markdown, Flexdashboard y Shiny, que reúne diferentes herramientas de análisis y consulta.
+                    
+                    El panel permite explorar las ventas de videojuegos mediante filtros por plataforma, género y periodo temporal. Incluye gráficos comparativos, análisis de la distribución regional de las ventas y tablas interactivas para consultar los videojuegos y sus resultados según los criterios seleccionados.
+                    
+                    Además, incorpora funcionalidades complementarias, como una nube de palabras basada en los títulos de los videojuegos.
+                    
+                </p>
+
+                
+                <div class="project-image">
+
+                    
+                    <figure class="project-figure">
+                        <img src="img/Videojuegos/video9.png"
+                             alt="Ventas globales">
+                    </figure>
+
+                    <figure class="project-figure">
+                        <img src="img/Videojuegos/video10.png"
+                             alt="Distribucion ventas por región">
+                        <figcaption>
+                            Algunos graficos interactivos .
+                        </figcaption>
+                    </figure>
+    
+    
+                </div>
+
+
+            </div>
+
+
+            <!-- RESULTADOS -->
+            <h2>Resultados</h2>
+
+            <p>
+                El análisis permitió estudiar las diferencias
+                en las ventas de videojuegos según las
+                plataformas, los géneros y las regiones
+                geográficas, así como comparar el comportamiento
+                comercial de PlayStation 4 y Xbox One.
+            </p>
+
+            <p>
+                El dashboard desarrollado reúne diferentes
+                visualizaciones y herramientas de consulta
+                en un único entorno interactivo, facilitando
+                la exploración de los datos y la comparación
+                de resultados mediante filtros y tablas.
+            </p>
+
+            <p>
+                Este proyecto permitió aplicar conocimientos
+                de preparación de datos, análisis exploratorio,
+                visualización y programación en R.
+            </p>
+
+
+            <!-- HERRAMIENTAS -->
+            <h2>Herramientas utilizadas</h2>
+
+            <p>
+                Para el desarrollo del proyecto se utilizaron
+                diferentes paquetes y herramientas del
+                entorno R:
+            </p>
+
+            <div class="technologies">
+                <span>R</span>
+                <span>R Markdown</span>
+                <span>Flexdashboard</span>
+                <span>Shiny</span>
+                <span>Tidyverse</span>
+                <span>dplyr</span>
+                <span>ggplot2</span>
+                <span>Plotly</span>
+                <span>Leaflet</span>
+                <span>DT</span>
+                <span>wordcloud</span>
+                <span>tm</span>
+                <span>knitr</span>
+                <span>kableExtra</span>
+                <span>treemapify</span>
+            </div>
+
+
+            <!-- FUENTE DE DATOS -->
+            <h2>Fuente de datos</h2>
+
+            <p>
+                Para realizar el análisis se utilizaron
+                conjuntos de datos de ventas de videojuegos
+                publicados en Kaggle:
+            </p>
+
+            <ul style="margin-left: 40px;">
+                <li>Video Games Sales as at 22 Dec 2016.</li>
+                <li>PS4 Games Sales.</li>
+                <li>Xbox One Game Sales.</li>
+            </ul>
+
+            <!-- ENLACES -->
+            <div class="project-actions">
+
+                <a href="https://github.com/AliciaCx/Analisis-ventas-videojuegos"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-link">
+                    Ver código y documentación en GitHub ↗
+                </a>
+
+                <a href="index.html#proyectos"
+                   class="back-link">
+                    ← Volver a mis proyectos
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© <span id="year"></span> | Alicia Casaux Vázquez</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,541 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Proyecto académico de diseño y gestión de bases de datos relacionales y NoSQL para una tienda de cosméticos.">
+
+    <title>Bases de datos | Portfolio</title>
+
+    <link rel="stylesheet" href="proyectos.css">
+</head>
+
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Alicia Casaux Vázquez</a>
+
+            <a href="index.html" class="back-home">
+                ← Volver al inicio
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section class="project-hero">
+
+            <p class="intro">
+                PROYECTO ACADÉMICO · GRADO EN ESTADÍSTICA · UNIVERSIDAD DE SEVILLA
+            </p>
+
+            <h1>Diseño y gestión de bases de datos</h1>
+
+            <p>
+                Diseño e implementación de una base de datos
+                para una tienda de cosméticos, combinando
+                tecnologías relacionales y NoSQL, consultas
+                y formularios para la gestión de información.
+            </p>
+
+            <div class="technologies">
+                <span>SQL</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+                <span>NoSQLBooster</span>
+                <span>Microsoft Access</span>
+            </div>
+
+        </section>
+
+
+        <!-- DETALLE DEL PROYECTO -->
+        <section class="project-detail">
+
+            <!-- DESCRIPCIÓN -->
+            <h2>Descripción del proyecto</h2>
+
+            <p>
+                Proyecto centrado en el diseño y desarrollo
+                de una base de datos para una tienda de
+                cosméticos, con el objetivo de organizar
+                la información relacionada con los productos,
+                las categorías, las tiendas, los empleados,
+                los proveedores y los clientes.
+            </p>
+
+            <p>
+                Se trabajó con bases de datos relacionales
+                y NoSQL, realizando consultas y operaciones
+                para gestionar la información. También se
+                diseñaron formularios en Microsoft Access
+                para facilitar la introducción y consulta
+                de los datos.
+            </p>
+
+
+            <!-- DESARROLLO -->
+            <h2>Desarrollo del proyecto</h2>
+
+            <div class="detail-card">
+
+                <h3>1. Diseño conceptual</h3>
+            
+                <p>
+                    Se diseñó el modelo entidad-relación de la base de datos,
+                    identificando las principales entidades del negocio, sus
+                    atributos y las relaciones existentes entre ellas. El
+                    modelo incluye información sobre clientes, productos,
+                    empleados, proveedores, tiendas, compras y servicios de
+                    maquillaje, permitiendo representar de forma estructurada
+                    los procesos de una tienda de cosméticos.
+                </p>
+            
+                <div class="project-image">
+            
+                    <figure class="project-figure">
+            
+                        <img src="img/bbdd/base1.png"
+                             alt="Diagrama entidad-relación de la base de datos"
+                             loading="lazy">
+            
+                        <figcaption>
+                            Diagrama entidad-relación desarrollado para definir
+                            la estructura de datos de la tienda de cosméticos y
+                            las relaciones entre clientes, productos, empleados,
+                            proveedores y servicios.
+                        </figcaption>
+            
+                    </figure>
+            
+                </div>
+            
+                <p>
+                    Durante esta fase se realizó la identificación de las
+                    entidades principales, la definición de claves primarias
+                    y foráneas, así como el modelado de relaciones uno a
+                    muchos y muchos a muchos. Este diseño sirvió como base
+                    para la posterior implementación de la base de datos en
+                    MySQL y su adaptación al modelo documental de MongoDB.
+                </p>
+            
+                <ul style="margin-left: 40px;">
+                    <li>Diseño del modelo entidad-relación.</li>
+                    <li>Definición de claves primarias y foráneas.</li>
+                    <li>Modelado de relaciones entre entidades.</li>
+                    <li>Estructuración de clientes, productos, empleados y proveedores.</li>
+                    <li>Preparación del esquema para su implementación en MySQL.</li>
+                </ul>
+            
+            </div>
+
+
+            <!-- 2. IMPLEMENTACIÓN Y CONSULTAS SQL -->
+            <div class="detail-card">
+
+                <h3>2. Implementación de la base de datos y análisis con SQL</h3>
+            
+                <p>
+                    Una vez definido el modelo conceptual, se implementó
+                    la estructura relacional de la base de datos mediante
+                    MySQL. Se crearon las tablas correspondientes a las
+                    distintas entidades del sistema, definiendo claves
+                    primarias, claves foráneas y restricciones de
+                    integridad para garantizar la consistencia de los datos.
+                </p>
+            
+                <p>
+                    Posteriormente se desarrollaron consultas SQL para
+                    obtener, relacionar y analizar la información
+                    almacenada en la base de datos. Se utilizaron
+                    operaciones de filtrado, combinación de tablas y
+                    agregación de datos para resolver diferentes casos
+                    de negocio relacionados con productos, clientes y
+                    compras.
+                </p>
+            
+                <h4>Filtrado de productos por precio</h4>
+            
+                <p>
+                    Consulta utilizada para identificar los productos
+                    con un precio superior a 50 €, permitiendo analizar
+                    los artículos de mayor valor económico dentro del
+                    catálogo.
+                </p>
+
+                <div class="project-image">
+            
+                    <figure class="project-figure">
+            
+                        <img src="img/bbdd/base2.png"
+                            alt="Consulta SQL para filtrar productos por precio"
+                            class="imagen-pequena2">
+                
+                        <figcaption>
+                            Consulta SQL utilizada para identificar productos
+                            con precios superiores a 50 €, mostrando su nombre,
+                            marca y precio.
+                        </figcaption>
+                
+                    </figure>
+            
+                </div>
+            
+            
+                <h4>Análisis de valoraciones de clientes</h4>
+            
+                <p>
+                    Consulta desarrollada para relacionar clientes,
+                    productos y comentarios asociados a valoraciones
+                    superiores a cuatro puntos, permitiendo identificar
+                    opiniones positivas sobre los productos.
+                </p>
+
+                <div class="project-image">
+            
+                    <figure class="project-figure">
+            
+                        <img src="img/bbdd/base3.png"
+                             alt="Consulta SQL relacionando clientes, productos y valoraciones">
+                
+                        <figcaption>
+                            Consulta que relaciona clientes, productos y
+                            comentarios para analizar las valoraciones más
+                            positivas registradas en la base de datos.
+                        </figcaption>
+                
+                    </figure>
+            
+                </div>
+            
+
+            
+                <h4>Análisis de compras por cliente</h4>
+            
+                <p>
+                    Consulta orientada al análisis de datos, calculando
+                    el número total de productos adquiridos por cada
+                    cliente mediante funciones de agregación y agrupación
+                    de registros.
+                </p>
+
+                <div class="project-image">
+            
+                    <figure class="project-figure">
+            
+                        <img src="img/bbdd/base4.png"
+                             alt="Consulta SQL para analizar compras de clientes"
+                            >
+                
+                        <figcaption>
+                            Análisis del volumen de productos adquiridos por
+                            cada cliente mediante funciones de agregación y
+                            agrupación de datos.
+                        </figcaption>
+                
+                    </figure>
+            
+                </div>
+            
+
+            
+            </div>
+
+
+            <!-- 3. MONGODB -->
+
+            <div class="detail-card">
+
+                <h3>3. Gestión de datos con MongoDB</h3>
+            
+                <p>
+                    Parte de la información almacenada en la base de datos
+                    relacional fue adaptada al modelo documental de MongoDB,
+                    organizando los datos en colecciones y documentos. Se
+                    trabajó con NoSQLBooster para realizar consultas,
+                    filtrados y operaciones de agregación sobre la información
+                    almacenada.
+                </p>
+            
+                <p>
+                    El uso de MongoDB permitió explorar un enfoque diferente
+                    al modelo relacional tradicional, aprovechando la
+                    flexibilidad de los documentos para almacenar y analizar
+                    información relacionada con clientes y productos.
+                </p>
+            
+                <h4>Filtrado de productos de alto valor</h4>
+            
+                <p>
+                    Consulta desarrollada para identificar productos con
+                    precios superiores a 100 €, permitiendo analizar los
+                    artículos de mayor valor económico disponibles en el
+                    catálogo.
+                </p>
+                <div class="project-image">
+            
+                    <figure class="project-figure">
+            
+                        <img src="img/bbdd/base5.png"
+                             alt="Consulta MongoDB para filtrar productos por precio"
+                             >
+                
+                        <figcaption>
+                            Consulta sobre la colección de productos para
+                            localizar artículos de precio elevado y visualizar
+                            sus principales características.
+                        </figcaption>
+                
+                    </figure>
+            
+                </div>
+            
+        
+            
+                <h4>Exploración y filtrado de información de clientes</h4>
+            
+                <p>
+                    Consulta orientada a la búsqueda y filtrado de registros
+                    dentro de la colección de clientes, permitiendo localizar
+                    información específica y ordenar los resultados según
+                    distintos criterios.
+                </p>
+
+                <div class="project-image">
+            
+                    <figure class="project-figure">
+            
+                        <img src="img/bbdd/base6.png"
+                             alt="Consulta MongoDB sobre la colección de clientes"
+                             >
+                
+                        <figcaption>
+                            Ejemplo de filtrado y ordenación de documentos
+                            mediante criterios de búsqueda definidos sobre la
+                            colección de clientes.
+                        </figcaption>
+                
+                    </figure>
+            
+                </div>
+            
+            
+                <h4>Análisis de precios por categoría</h4>
+            
+                <p>
+                    Utilización del framework de agregación de MongoDB para
+                    calcular métricas y resumir información, obteniendo las
+                    categorías con mayor precio medio de producto.
+                </p>
+
+                <div class="project-image">
+            
+                    <figure class="project-figure">
+            
+                        <img src="img/bbdd/base7.png"
+                             alt="Operación de agregación en MongoDB"
+                             >
+                
+                        <figcaption>
+                            Operación de agregación empleada para calcular y
+                            comparar indicadores estadísticos a partir de los
+                            datos almacenados en las colecciones.
+                        </figcaption>
+                
+                    </figure>
+            
+                </div>
+            
+            </div>
+
+
+            <!-- 4. MICROSOFT ACCESS -->
+
+            <div class="detail-card">
+
+                <h3>4. Diseño de formularios en Microsoft Access</h3>
+            
+                <p>
+                    Con el objetivo de facilitar la gestión y consulta de
+                    la información almacenada en la base de datos, se
+                    desarrollaron distintos formularios en Microsoft Access.
+                    Estas interfaces permiten visualizar, introducir y
+                    modificar datos de forma más intuitiva sin necesidad
+                    de interactuar directamente con las tablas.
+                </p>
+            
+                <p>
+                    Los formularios fueron diseñados para gestionar
+                    información relacionada con clientes, productos,
+                    compras y servicios de maquillaje, mejorando la
+                    accesibilidad y organización de los datos.
+                </p>
+            
+                <h4>Gestión de clientes VIP y Premium</h4>
+            
+                <p>
+                    Formulario destinado a la administración de las
+                    promociones y descuentos asociados a los distintos
+                    tipos de clientes, permitiendo identificar de forma
+                    sencilla si un cliente dispone de ventajas especiales.
+                </p>
+
+                <div class="project-image">
+            
+                    <figure class="project-figure">
+            
+                        <img src="img/bbdd/base8.png"
+                             alt="Formulario de gestión de clientes VIP y Premium"
+                            >
+                
+                        <figcaption>
+                            Formulario utilizado para consultar y gestionar
+                            promociones y descuentos de clientes VIP y Premium.
+                        </figcaption>
+                
+                    </figure>
+            
+                </div>
+        
+            
+                <h4>Consulta de productos y versiones especiales</h4>
+            
+                <p>
+                    Interfaz diseñada para visualizar la información de
+                    cada producto, incluyendo sus características y las
+                    posibles versiones especiales asociadas.
+                </p>
+
+                
+
+                <div class="project-image">
+            
+                    <figure class="project-figure">
+            
+                        <img src="img/bbdd/base9.png"
+                             alt="Formulario de productos en Microsoft Access"
+                            >
+                
+                        <figcaption>
+                            Consulta detallada de productos y de sus versiones
+                            especiales.
+                        </figcaption>
+                
+                    </figure>
+            
+                </div>
+            
+
+            
+                <h4>Registro de compras y valoraciones</h4>
+            
+                <p>
+                    Formulario orientado al seguimiento de las compras
+                    realizadas por los clientes, permitiendo registrar
+                    productos adquiridos, cantidades y valoraciones
+                    asociadas a cada producto.
+                </p>
+
+                <div class="project-image">
+            
+                    <figure class="project-figure">
+            
+                        <img src="img/bbdd/base10.png"
+                             alt="Formulario de registro de compras"
+                            >
+                
+                        <figcaption>
+                            Gestión de compras y reseñas de productos realizadas
+                            por los clientes de la tienda.
+                        </figcaption>
+                
+                    </figure>
+            
+                </div>
+            
+            
+            </div>
+
+            <!-- RESULTADOS -->
+            
+            <h2>Resultados</h2>
+            
+            <p>
+                Se desarrolló el diseño conceptual y lógico de una base
+                de datos para una tienda de cosméticos, implementando
+                su estructura relacional mediante MySQL Workbench y
+                definiendo las tablas, claves y relaciones necesarias.
+            </p>
+            
+            <p>
+                Se realizaron consultas SQL para recuperar, relacionar
+                y analizar información sobre clientes, productos y compras,
+                utilizando filtros, combinaciones de tablas y funciones
+                de agregación. También se diseñaron formularios en
+                Microsoft Access para facilitar la consulta y gestión
+                de los datos.
+            </p>
+            
+            <p>
+                Además, se trabajó con MongoDB para adaptar parte de la
+                información al modelo documental, realizando consultas,
+                modificaciones y operaciones de agregación. El proyecto
+                permitió aplicar diferentes técnicas de diseño, gestión
+                y consulta de bases de datos relacionales y NoSQL.
+            </p>
+            
+
+
+            <!-- HERRAMIENTAS -->
+            <h2>Herramientas utilizadas</h2>
+
+            <div class="technologies">
+                <span>SQL</span>
+                <span>MySQL</span>
+                <span>MySQL Workbench</span>
+                <span>MongoDB</span>
+                <span>NoSQLBooster</span>
+                <span>Microsoft Access</span>
+                <span>phpMyAdmin</span>
+                <span>DIA</span>
+            </div>
+
+
+            <!-- ENLACES -->
+            <div class="project-actions">
+
+                <a href="https://github.com/AliciaCx/dis-base-datos"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="project-link">
+                    Ver código y documentación en GitHub ↗
+                </a>
+
+                <a href="index.html#proyectos"
+                   class="back-link">
+                    ← Volver a mis proyectos
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© <span id="year"></span> | Alicia Casaux Vázquez</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
